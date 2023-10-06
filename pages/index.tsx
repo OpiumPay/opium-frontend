@@ -49,17 +49,17 @@ const Home: NextPage = () => {
                   <Grid container spacing={2}>
                     <Grid item xs={4}>
                       <CardStep stepNumber={1}>
-                        This is the first step. Add your details here.
+                        This is the first step.
                       </CardStep>
                     </Grid>
                     <Grid item xs={4}>
                       <CardStep stepNumber={2}>
-                        This is the second step. More details go here.
+                        This is the second step.
                       </CardStep>
                     </Grid>
                     <Grid item xs={4}>
                       <CardStep stepNumber={3}>
-                        This is the third step. More details go here.
+                        This is the third step.
                       </CardStep>
                     </Grid>
                   </Grid>
