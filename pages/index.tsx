@@ -1,12 +1,13 @@
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+// import styles from '../styles/Home.module.css';
+// import '../styles/globals.css';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
-import CardStep from './../components/cardStep';
+import CardStep from '../components/CardStep';
 import Button from '@mui/material/Button';
 
 
@@ -20,7 +21,8 @@ const Item = styled(Paper)(({ theme }) => ({
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <div >
+    {/* <div className={styles.container}> */}
       <Head>
         <title>RainbowKit App</title>
         <meta
@@ -31,6 +33,8 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
+
+        <h1 className='text-3xl text-red-600' >testing</h1>
         <ConnectButton />
         <Box sx={{ flexGrow: 1, height: '100vh' }}>
           <Grid container spacing={2}>
@@ -97,7 +101,8 @@ const Home: NextPage = () => {
         </Box>
       </main>
 
-      <footer className={styles.footer}>
+      <footer >
+      {/* <footer className={styles.footer}> */}
         <a href="https://coria.tech" rel="noopener noreferrer" target="_blank">
           @ 2023 by Coria
         </a>
