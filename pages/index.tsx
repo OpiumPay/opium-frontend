@@ -20,7 +20,7 @@ const Home = () => {
         <div className='grid-cols-12 gap-4 grid' >
             <div className='col-span-2'> 
               <ConnectButton />
-              <Button className=' bg-blue-600 text-white px-4 border-4 rounded hover:bg-blue-800  drop-shadow-xl mt-2 ' >Registration</Button>
+              <button className=' bg-blue-600 text-white px-4 border-4 rounded hover:bg-blue-800  drop-shadow-xl mt-2 ' >Registration</button>
             </div>
             <div className='col-span-2'>
               <CardStep stepNumber={1}>
