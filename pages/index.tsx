@@ -19,10 +19,10 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-const Home: NextPage = () => {
+const Home = () => {
   return (
-    <div >
-    {/* <div className={styles.container}> */}
+    <div className='px-8 py-0' >
+
       <Head>
         <title>RainbowKit App</title>
         <meta
@@ -32,73 +32,29 @@ const Home: NextPage = () => {
         <link href="/favicon.ico" rel="icon" />
       </Head>
 
-      <main>
+      <main className='min-h-screen py-8 w-screen '>
 
-        <h1 className='text-3xl text-red-600' >testing</h1>
-        <ConnectButton />
-        <Box sx={{ flexGrow: 1, height: '100vh' }}>
-          <Grid container spacing={2}>
-            {/* First Half */}
-            <Grid item xs={2}>
-              <Button variant="contained" color="primary">Registration</Button>
-            </Grid>
-
-            {/* Second Half */}
-            <Grid item xs={10} >
-              {/* Content for the second half */}
-              <Grid container spacing={2} direction="column">
-                {/* Sub-Grid 3 */}
-                <Grid item xs={6}>
-
-                  <Grid container spacing={2}>
-                    <Grid item xs={4}>
-                      <CardStep stepNumber={1}>
-                        This is the first step.
-                      </CardStep>
-                    </Grid>
-                    <Grid item xs={4}>
-                      <CardStep stepNumber={2}>
-                        This is the second step.
-                      </CardStep>
-                    </Grid>
-                    <Grid item xs={4}>
-                      <CardStep stepNumber={3}>
-                        This is the third step.
-                      </CardStep>
-                    </Grid>
-                  </Grid>
-
-                </Grid>
-                {/* Sub-Grid 4 */}
-                <Grid item xs={6} >
-
-                  <Grid item xs={6} >
-                  <Grid container spacing={2} justifyContent="center">
-                    <Grid item xs={4} >
-                      <CardStep stepNumber={1}>
-                        This is the first step. Add your details here.
-                      </CardStep>
-                    </Grid>
-                    </Grid>
-                    <Grid container spacing={2} justifyContent="center">
-                      <Grid item xs={4}>
-                        <CardStep stepNumber={2}>
-                          This is the second step. More details go here.
-                        </CardStep>
-                      </Grid>
-                      <Grid item xs={4}>
-                        <CardStep stepNumber={3}>
-                          This is the third step. More details go here.
-                        </CardStep>
-                      </Grid>
-                    </Grid>
-
-                  </Grid>
-                </Grid>
-              </Grid>
-            </Grid>
-          </Grid>
-        </Box>
+        <div className='grid-cols-12 gap-4 grid' >
+            <div className='col-span-2'> 
+              <ConnectButton />
+              <Button className=' bg-blue-600 text-white px-4 border-4 rounded hover:bg-blue-800  drop-shadow-xl mt-2 ' >Registration</Button>
+            </div>
+            <div className='col-span-2'>
+              <CardStep stepNumber={1}>
+                This is the first step.
+              </CardStep>
+            </div>
+            <div className='col-span-2'>
+              <CardStep stepNumber={2}>
+                This is the second step.
+              </CardStep>
+            </div>
+            <div className='col-span-2'>
+              <CardStep stepNumber={3}>
+                This is the third step.
+              </CardStep>
+            </div>
+          </div>
       </main>
 
       <footer >

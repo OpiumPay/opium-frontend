@@ -1,7 +1,4 @@
 import React, { ReactNode } from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
 
 interface CardStepProps {
   stepNumber: number;
@@ -10,14 +7,12 @@ interface CardStepProps {
 
 const CardStep: React.FC<CardStepProps> = ({ stepNumber, children }) => {
   return (
-    <Card>
-      <CardContent>
-        <Typography variant="h5" component="div">
+    <div className='border-2 rounded border-gray-500 p-2 drop-shadow-md'>
+        <h5 className='text-2xl'>
           Step {stepNumber}
-        </Typography>
-        <Typography variant="body2">{children}</Typography>
-      </CardContent>
-    </Card>
+        </h5>
+        <div>{children}</div>
+    </div>
   );
 };
 
